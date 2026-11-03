@@ -1,0 +1,895 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SALINAN LAPORAN AUDIT INTEGRITAS & TRANSPARANSI ASN KOTA PALOPO</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 24px;
+      background-color: #f8fafc;
+      color: #0f172a;
+      line-height: 1.5;
+    }
+    .container {
+      max-width: 1400px;
+      margin: 0 auto;
+      background: #ffffff;
+      padding: 32px;
+      border: 1px solid #e2e8f0;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+      border-radius: 8px;
+    }
+    .header {
+      border-bottom: 3px double #1e293b;
+      padding-bottom: 16px;
+      margin-bottom: 24px;
+      text-align: center;
+    }
+    .header h1 {
+      margin: 0;
+      font-size: 20px;
+      font-weight: 800;
+      letter-spacing: 0.5px;
+      color: #0f172a;
+      text-transform: uppercase;
+    }
+    .header h2 {
+      margin: 4px 0;
+      font-size: 16px;
+      font-weight: 700;
+      color: #1e3a8a;
+      text-transform: uppercase;
+    }
+    .header p {
+      margin: 2px 0;
+      font-size: 12px;
+      color: #475569;
+    }
+    .badge-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #f1f5f9;
+      padding: 10px 16px;
+      border-radius: 6px;
+      margin-bottom: 24px;
+      font-size: 12px;
+      border-left: 4px solid #d97706;
+    }
+    .kpi-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+      margin-bottom: 28px;
+    }
+    .kpi-card {
+      background: #ffffff;
+      border: 1px solid #e2e8f0;
+      border-radius: 6px;
+      padding: 14px;
+      border-top: 3px solid #0284c7;
+    }
+    .kpi-card.alert {
+      border-top-color: #dc2626;
+      background: #fff5f5;
+    }
+    .kpi-card.success {
+      border-top-color: #16a34a;
+      background: #f0fdf4;
+    }
+    .kpi-title {
+      font-size: 11px;
+      text-transform: uppercase;
+      font-weight: 700;
+      color: #64748b;
+      margin-bottom: 4px;
+    }
+    .kpi-value {
+      font-size: 18px;
+      font-weight: 800;
+      color: #0f172a;
+    }
+    .section-title {
+      font-size: 16px;
+      font-weight: 800;
+      color: #1e293b;
+      margin: 32px 0 12px 0;
+      padding-bottom: 6px;
+      border-bottom: 2px solid #e2e8f0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .table-container {
+      overflow-x: auto;
+      margin-bottom: 28px;
+      border: 1px solid #cbd5e1;
+      border-radius: 6px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 12px;
+    }
+    th {
+      background: #1e293b;
+      color: #ffffff;
+      padding: 10px 8px;
+      text-align: left;
+      font-weight: 600;
+      letter-spacing: 0.3px;
+    }
+    .property-card {
+      background: #f8fafc;
+      border: 1px solid #cbd5e1;
+      border-radius: 6px;
+      padding: 18px;
+      margin-bottom: 20px;
+    }
+    .property-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+      font-size: 12px;
+    }
+    .footer {
+      margin-top: 40px;
+      padding-top: 20px;
+      border-top: 1px solid #e2e8f0;
+      font-size: 11px;
+      color: #64748b;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+    }
+    .signature-box {
+      text-align: center;
+      margin-top: 24px;
+    }
+    @media print {
+      body {
+        padding: 0;
+        background: #fff;
+      }
+      .container {
+        border: none;
+        box-shadow: none;
+        padding: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    
+    <!-- KOP RESMI LAPORAN -->
+    <div class="header">
+      <h1>PEMERINTAH KOTA PALOPO</h1>
+      <h2>INSPEKTORAT DAERAH & TIM GABUNGAN PENGAWASAN AKUNTABILITAS ASN</h2>
+      <p>Jl. Andi Djemma No. 1, Tompotikka, Kec. Wara, Kota Palopo, Sulawesi Selatan 91911</p>
+      <p>Layanan Pengaduan & Whistleblowing System (WBS) - Koordinasi Tim Satgas Pencegahan Korupsi Daerah</p>
+    </div>
+
+    <!-- INFORMASI STATUS & TANGGAL -->
+    <div class="badge-bar">
+      <div>
+        <strong>DOKUMEN RESMI HASIL AUDIT INVESTIGATIF & TRANSPARANSI PUBLIK</strong> | No. Reg: AUD-PLP/EXP-2024/XI
+      </div>
+      <div>
+        Tanggal Cetak / Salinan: <strong>4 November 2026</strong>
+      </div>
+    </div>
+
+    <!-- KPI RINGKASAN TEMUAN -->
+    <div class="kpi-grid">
+      <div class="kpi-card alert">
+        <div class="kpi-title">Total Aliran Ilegal / Suap Terdeteksi</div>
+        <div class="kpi-value" style="color: #dc2626;">Rp 8.554.800.000</div>
+        <div style="font-size: 10px; color: #7f1d1d; margin-top: 4px;">Penerimaan gratifikasi tender & fee infrastruktur</div>
+      </div>
+      <div class="kpi-card alert">
+        <div class="kpi-title">ASN Indisipliner (Mangkir Gaji Utuh)</div>
+        <div class="kpi-value" style="color: #ea580c;">2 ASN (13% - 18% Masuk)</div>
+        <div style="font-size: 10px; color: #9a3412; margin-top: 4px;">Total TGR Gaji fiktif: Rp 214.800.000</div>
+      </div>
+      <div class="kpi-card success">
+        <div class="kpi-title">Pajak Dialirkan ke Dhuafa / Warga Miskin</div>
+        <div class="kpi-value" style="color: #16a34a;">Rp 14.470.000.000</div>
+        <div style="font-size: 10px; color: #14532d; margin-top: 4px;">5 Program Bansos, RTLH, BPNT & Modal Usaha</div>
+      </div>
+      <div class="kpi-card">
+        <div class="kpi-title">Audit Objek Properti Khusus</div>
+        <div class="kpi-value" style="color: #0284c7;">BTN Merdeka L-12</div>
+        <div style="font-size: 10px; color: #0369a1; margin-top: 4px;">Terindikasi Nominee PPK Infrastruktur PU</div>
+      </div>
+    </div>
+
+    <!-- BAGIAN 1: TABEL ASN AUDIT -->
+    <div class="section-title">
+      <span>1. TABEL TRANSPARANSI AUDIT ASN KANTOR WALIKOTA PALOPO (SUAP, GAJI BULANAN & ASET)</span>
+      <span style="font-size: 12px; font-weight: normal; color: #64748b;">Total 6 Entitas Terperiksa</span>
+    </div>
+
+    <div class="table-container">
+      <table>
+        <thead>
+          <tr>
+            <th style="width: 30px; text-align: center;">No</th>
+            <th style="width: 170px;">Nama ASN & Jabatan</th>
+            <th style="width: 130px;">Alamat Rumah</th>
+            <th style="width: 120px;">No. Rekening & Bank</th>
+            <th style="width: 140px;">Rincian Slip Gaji / Bulan</th>
+            <th style="width: 110px;">NPWP & Pajak</th>
+            <th style="width: 80px; text-align: center;">Presensi Kehadiran</th>
+            <th style="width: 140px;">Indikasi Aliran Ilegal</th>
+            <th style="width: 130px;">Audit Aset Kekayaan</th>
+            <th style="width: 140px;">Status & Rekomendasi</th>
+          </tr>
+        </thead>
+        <tbody>
+          
+      <tr style="border-bottom: 1px solid #cbd5e1; background-color: #f8fafc;">
+        <td style="padding: 10px 8px; text-align: center; font-weight: bold;">1</td>
+        <td style="padding: 10px 8px;">
+          <strong style="color: #0f172a; font-size: 14px;">Drs. H. M. Syarifuddin, M.Si</strong><br/>
+          <span style="font-size: 11px; color: #475569;">NIP: 19740815 199803 1 004</span><br/>
+          <span style="display: inline-block; padding: 2px 6px; margin-top: 4px; font-size: 10px; font-weight: bold; border-radius: 4px; background: #e2e8f0; color: #1e293b;">
+            Kepala Bagian Pengadaan Barang dan Jasa (PBJ) (IV/c)
+          </span><br/>
+          <span style="font-size: 11px; color: #64748b;">Sekretariat Daerah Kota Palopo (Kantor Walikota)</span>
+        </td>
+        <td style="padding: 10px 8px; font-size: 12px; color: #1e293b;">
+          <strong>Jl. Pemuda No. 45, RT 02 / RW 03, Kel. Takkalala, Kec. Wara Selatan, Palopo</strong><br/>
+          <span style="color: #64748b;">Kel/Kec: Takkalala, Wara Selatan, Kota Palopo</span>
+        </td>
+        <td style="padding: 10px 8px; font-size: 11px;">
+          <div style="font-family: monospace; font-weight: bold; color: #0284c7;">040-021-889102-1</div>
+          <div style="color: #334155;">Bank: Bank Sulselbar Cabang Utama Palopo</div>
+          <div style="font-size: 10px; color: #64748b;">a.n M. Syarifuddin (serta rekening tampungan a.n Istri & Ajudan)</div>
+        </td>
+        <td style="padding: 10px 8px; font-size: 11px;">
+          <table style="width: 100%; border-collapse: collapse; font-size: 11px; background: #f1f5f9; border-radius: 4px;">
+            <tr><td style="padding: 2px 4px;">Gaji Pokok:</td><td style="text-align: right; font-weight: 500;">Rp 4.850.000</td></tr>
+            <tr><td style="padding: 2px 4px;">Tunj. Jabatan:</td><td style="text-align: right; font-weight: 500;">Rp 2.025.000</td></tr>
+            <tr><td style="padding: 2px 4px;">TPP Bulanan:</td><td style="text-align: right; font-weight: 600; color: #0f766e;">Rp 7.500.000</td></tr>
+            <tr style="border-top: 1px dashed #cbd5e1; font-weight: bold;"><td style="padding: 2px 4px; color: #047857;">Bersih Diterima:</td><td style="text-align: right; color: #047857;">Rp 14.366.680</td></tr>
+          </table>
+        </td>
+        <td style="padding: 10px 8px; font-size: 11px;">
+          <div style="font-family: monospace; font-weight: bold;">08.412.871.3-803.000</div>
+          <span style="display: inline-block; padding: 2px 5px; font-size: 10px; border-radius: 3px; margin-top: 2px; font-weight: bold; background: #fee2e2; color: #991b1b;">
+            Anomali Pelaporan Harta
+          </span>
+          <div style="margin-top: 4px; font-size: 10px; color: #dc2626;">Selisih: Rp 11.560.000</div>
+        </td>
+        <td style="padding: 10px 8px; font-size: 11px; text-align: center;">
+          <div style="font-size: 15px; font-weight: 800; color: #15803d;">
+            88%
+          </div>
+          <div style="font-size: 10px; color: #64748b;">20 dari 22 hari kerja</div>
+          
+        </td>
+        <td style="padding: 10px 8px; font-size: 11px;">
+          <div style="font-weight: 800; color: #b91c1c; font-size: 13px;">Rp 2.450.000.000</div>
+          <div style="font-size: 10px; color: #475569; margin-top: 2px; line-height: 1.3;">Fee komitmen lelang proyek tender lanjutan gedung & revitalisasi Islamic Center Palopo dari konsorsium rekanan swasta</div>
+        </td>
+        <td style="padding: 10px 8px; font-size: 11px;">
+          <div style="font-weight: bold; color: #1e293b;">Total: Rp 5.220.000.000</div>
+          <div style="font-size: 10px; color: #d97706; margin-top: 2px;">487% di atas kemampuan akumulasi penghasilan resmi 20 tahun masa dinas</div>
+          <div style="font-size: 10px; color: #64748b; margin-top: 2px;">Rumah/Tanah: 3 unit, Mobil/Motor: 2 unit</div>
+        </td>
+        <td style="padding: 10px 8px; font-size: 10px;">
+          <span style="display: inline-block; padding: 2px 6px; font-weight: bold; border-radius: 4px; background: #fee2e2; color: #991b1b;">
+            Pelimpahan APH (Kejaksaan/KPK)
+          </span>
+          <p style="margin: 4px 0 0 0; color: #334155; line-height: 1.3;">Blokir rekening penampung, penonaktifan dari jabatan struktural PBJ, dan rekomendasi audit forensik PPATK serta pelimpahan berkas ke Kejaksaan Negeri Palopo.</p>
+        </td>
+      </tr>
+    
+      <tr style="border-bottom: 1px solid #cbd5e1; background-color: #ffffff;">
+        <td style="padding: 10px 8px; text-align: center; font-weight: bold;">2</td>
+        <td style="padding: 10px 8px;">
+          <strong style="color: #0f172a; font-size: 14px;">Rahmatia Az-Zahra, S.Sos</strong><br/>
+          <span style="font-size: 11px; color: #475569;">NIP: 19871102 201101 2 007</span><br/>
+          <span style="display: inline-block; padding: 2px 6px; margin-top: 4px; font-size: 10px; font-weight: bold; border-radius: 4px; background: #e2e8f0; color: #1e293b;">
+            Staf Administrasi Umum & Tata Usaha Pimpinan (III/c)
+          </span><br/>
+          <span style="font-size: 11px; color: #64748b;">Bagian Umum Sekretariat Daerah Kota Palopo</span>
+        </td>
+        <td style="padding: 10px 8px; font-size: 12px; color: #1e293b;">
+          <strong>Perumahan BTN Nyiur Permai Blok E No. 8, Kel. Malatunrung, Kec. Wara Timur, Palopo</strong><br/>
+          <span style="color: #64748b;">Kel/Kec: Malatunrung, Wara Timur, Kota Palopo</span>
+        </td>
+        <td style="padding: 10px 8px; font-size: 11px;">
+          <div style="font-family: monospace; font-weight: bold; color: #0284c7;">040-025-411290-7</div>
+          <div style="color: #334155;">Bank: Bank Sulselbar Cabang Palopo</div>
+          <div style="font-size: 10px; color: #64748b;">a.n Rahmatia Az-Zahra</div>
+        </td>
+        <td style="padding: 10px 8px; font-size: 11px;">
+          <table style="width: 100%; border-collapse: collapse; font-size: 11px; background: #f1f5f9; border-radius: 4px;">
+            <tr><td style="padding: 2px 4px;">Gaji Pokok:</td><td style="text-align: right; font-weight: 500;">Rp 3.450.000</td></tr>
+            <tr><td style="padding: 2px 4px;">Tunj. Jabatan:</td><td style="text-align: right; font-weight: 500;">Rp 540.000</td></tr>
+            <tr><td style="padding: 2px 4px;">TPP Bulanan:</td><td style="text-align: right; font-weight: 600; color: #0f766e;">Rp 4.200.000</td></tr>
+            <tr style="border-top: 1px dashed #cbd5e1; font-weight: bold;"><td style="padding: 2px 4px; color: #047857;">Bersih Diterima:</td><td style="text-align: right; color: #047857;">Rp 8.316.260</td></tr>
+          </table>
+        </td>
+        <td style="padding: 10px 8px; font-size: 11px;">
+          <div style="font-family: monospace; font-weight: bold;">72.311.902.5-803.000</div>
+          <span style="display: inline-block; padding: 2px 5px; font-size: 10px; border-radius: 3px; margin-top: 2px; font-weight: bold; background: #fee2e2; color: #991b1b;">
+            SPT Tidak Dilaporkan
+          </span>
+          <div style="margin-top: 4px; font-size: 10px; color: #dc2626;">Selisih: Rp 2.580.000</div>
+        </td>
+        <td style="padding: 10px 8px; font-size: 11px; text-align: center;">
+          <div style="font-size: 15px; font-weight: 800; color: #dc2626;">
+            13.6%
+          </div>
+          <div style="font-size: 10px; color: #64748b;">3 dari 22 hari kerja (Mangkir tanpa keterangan 19 hari)</div>
+          <span style="display:inline-block; margin-top:3px; padding:1px 4px; background:#fecaca; color:#991b1b; font-size:9px; font-weight:bold; border-radius:3px;">Mangkir Gaji Utuh</span>
+        </td>
+        <td style="padding: 10px 8px; font-size: 11px;">
+          <div style="font-weight: 800; color: #b91c1c; font-size: 13px;">Rp 142.800.000</div>
+          <div style="font-size: 10px; color: #475569; margin-top: 2px; line-height: 1.3;">Total akumulasi pembayaran TPP & Uang Makan fiktif selama 18 bulan tanpa pemotongan presensi fingerprint (diduga titip absen/bypass mesin absen)</div>
+        </td>
+        <td style="padding: 10px 8px; font-size: 11px;">
+          <div style="font-weight: bold; color: #1e293b;">Total: Rp 708.000.000</div>
+          <div style="font-size: 10px; color: #d97706; margin-top: 2px;">Pelanggaran PP 94/2021 tentang Disiplin PNS: Gaji utuh tanpa kinerja</div>
+          <div style="font-size: 10px; color: #64748b; margin-top: 2px;">Rumah/Tanah: 1 unit, Mobil/Motor: 2 unit</div>
+        </td>
+        <td style="padding: 10px 8px; font-size: 10px;">
+          <span style="display: inline-block; padding: 2px 6px; font-weight: bold; border-radius: 4px; background: #fee2e2; color: #991b1b;">
+            Terbukti & Rekomendasi Sanksi
+          </span>
+          <p style="margin: 4px 0 0 0; color: #334155; line-height: 1.3;">Pemberlakuan Tuntutan Ganti Rugi (TGR) pengembalian ke kas daerah senilai Rp 142,8 Juta serta penjatuhan hukuman disiplin berat berupa penurunan pangkat 1 tingkat.</p>
+        </td>
+      </tr>
+    
+      <tr style="border-bottom: 1px solid #cbd5e1; background-color: #f8fafc;">
+        <td style="padding: 10px 8px; text-align: center; font-weight: bold;">3</td>
+        <td style="padding: 10px 8px;">
+          <strong style="color: #0f172a; font-size: 14px;">Ir. Hendra Gunawan, S.T., M.T.</strong><br/>
+          <span style="font-size: 11px; color: #475569;">NIP: 19790412 200502 1 003</span><br/>
+          <span style="display: inline-block; padding: 2px 6px; margin-top: 4px; font-size: 10px; font-weight: bold; border-radius: 4px; background: #e2e8f0; color: #1e293b;">
+            Pejabat Pembuat Komitmen (PPK) Infrastruktur Bina Marga & Ke-PU-an (IV/a)
+          </span><br/>
+          <span style="font-size: 11px; color: #64748b;">Dinas PUPR Perbantuan Sekretariat Daerah Palopo</span>
+        </td>
+        <td style="padding: 10px 8px; font-size: 12px; color: #1e293b;">
+          <strong>BTN Merdeka Blok L Nomor 12 (Objek Audit Forensik), Kel. Salobulo, Kec. Wara Utara, Palopo</strong><br/>
+          <span style="color: #64748b;">Kel/Kec: Salobulo, Wara Utara, Kota Palopo</span>
+        </td>
+        <td style="padding: 10px 8px; font-size: 11px;">
+          <div style="font-family: monospace; font-weight: bold; color: #0284c7;">012-009-338271-9</div>
+          <div style="color: #334155;">Bank: Bank Mandiri Cabang Palopo Ratulangi</div>
+          <div style="font-size: 10px; color: #64748b;">a.n Hendra Gunawan (serta rekening tabungan pihak terafiliasi KK di BTN Merdeka)</div>
+        </td>
+        <td style="padding: 10px 8px; font-size: 11px;">
+          <table style="width: 100%; border-collapse: collapse; font-size: 11px; background: #f1f5f9; border-radius: 4px;">
+            <tr><td style="padding: 2px 4px;">Gaji Pokok:</td><td style="text-align: right; font-weight: 500;">Rp 4.450.000</td></tr>
+            <tr><td style="padding: 2px 4px;">Tunj. Jabatan:</td><td style="text-align: right; font-weight: 500;">Rp 1.850.000</td></tr>
+            <tr><td style="padding: 2px 4px;">TPP Bulanan:</td><td style="text-align: right; font-weight: 600; color: #0f766e;">Rp 6.800.000</td></tr>
+            <tr style="border-top: 1px dashed #cbd5e1; font-weight: bold;"><td style="padding: 2px 4px; color: #047857;">Bersih Diterima:</td><td style="text-align: right; color: #047857;">Rp 13.143.680</td></tr>
+          </table>
+        </td>
+        <td style="padding: 10px 8px; font-size: 11px;">
+          <div style="font-family: monospace; font-weight: bold;">07.982.341.2-803.000</div>
+          <span style="display: inline-block; padding: 2px 5px; font-size: 10px; border-radius: 3px; margin-top: 2px; font-weight: bold; background: #fee2e2; color: #991b1b;">
+            Kurang Bayar
+          </span>
+          <div style="margin-top: 4px; font-size: 10px; color: #dc2626;">Selisih: Rp 9.420.000</div>
+        </td>
+        <td style="padding: 10px 8px; font-size: 11px; text-align: center;">
+          <div style="font-size: 15px; font-weight: 800; color: #15803d;">
+            92%
+          </div>
+          <div style="font-size: 10px; color: #64748b;">21 dari 22 hari kerja</div>
+          
+        </td>
+        <td style="padding: 10px 8px; font-size: 11px;">
+          <div style="font-weight: 800; color: #b91c1c; font-size: 13px;">Rp 3.820.000.000</div>
+          <div style="font-size: 10px; color: #475569; margin-top: 2px; line-height: 1.3;">Penerimaan kickback & pengaturan fee sebesar 7% dari paket proyek lanjutan pengaspalan jalan lingkar barat Palopo, talud sungai Amassangan, dan pelebaran jembatan Senang</div>
+        </td>
+        <td style="padding: 10px 8px; font-size: 11px;">
+          <div style="font-weight: bold; color: #1e293b;">Total: Rp 5.096.000.000</div>
+          <div style="font-size: 10px; color: #d97706; margin-top: 2px;">512% melebihi total akumulasi gaji resmi 19 tahun kerja PNS</div>
+          <div style="font-size: 10px; color: #64748b; margin-top: 2px;">Rumah/Tanah: 3 unit, Mobil/Motor: 3 unit</div>
+        </td>
+        <td style="padding: 10px 8px; font-size: 10px;">
+          <span style="display: inline-block; padding: 2px 6px; font-weight: bold; border-radius: 4px; background: #fee2e2; color: #991b1b;">
+            Audit Forensik Aset
+          </span>
+          <p style="margin: 4px 0 0 0; color: #334155; line-height: 1.3;">Penyitaan berkas lelang proyek fisik lanjutan 2023-2024, penyegelan rumah BTN Merdeka Blok L No. 12 untuk pemeriksaan fisik forensik BPKP, dan pemeriksaan bersama APH.</p>
+        </td>
+      </tr>
+    
+      <tr style="border-bottom: 1px solid #cbd5e1; background-color: #ffffff;">
+        <td style="padding: 10px 8px; text-align: center; font-weight: bold;">4</td>
+        <td style="padding: 10px 8px;">
+          <strong style="color: #0f172a; font-size: 14px;">Baharuddin Tampo, S.E.</strong><br/>
+          <span style="font-size: 11px; color: #475569;">NIP: 19820317 200804 1 002</span><br/>
+          <span style="display: inline-block; padding: 2px 6px; margin-top: 4px; font-size: 10px; font-weight: bold; border-radius: 4px; background: #e2e8f0; color: #1e293b;">
+            Bendahara Pengeluaran Sekretariat Daerah Kota Palopo (III/d)
+          </span><br/>
+          <span style="font-size: 11px; color: #64748b;">Bagian Keuangan Sekretariat Daerah (Kantor Walikota)</span>
+        </td>
+        <td style="padding: 10px 8px; font-size: 12px; color: #1e293b;">
+          <strong>Kompleks Pepabri Blok C No. 14, Kel. Binturu, Kec. Wara Selatan, Palopo</strong><br/>
+          <span style="color: #64748b;">Kel/Kec: Binturu, Wara Selatan, Kota Palopo</span>
+        </td>
+        <td style="padding: 10px 8px; font-size: 11px;">
+          <div style="font-family: monospace; font-weight: bold; color: #0284c7;">040-022-991823-4</div>
+          <div style="color: #334155;">Bank: Bank Sulselbar Cabang Palopo</div>
+          <div style="font-size: 10px; color: #64748b;">a.n Baharuddin Tampo</div>
+        </td>
+        <td style="padding: 10px 8px; font-size: 11px;">
+          <table style="width: 100%; border-collapse: collapse; font-size: 11px; background: #f1f5f9; border-radius: 4px;">
+            <tr><td style="padding: 2px 4px;">Gaji Pokok:</td><td style="text-align: right; font-weight: 500;">Rp 3.850.000</td></tr>
+            <tr><td style="padding: 2px 4px;">Tunj. Jabatan:</td><td style="text-align: right; font-weight: 500;">Rp 980.000</td></tr>
+            <tr><td style="padding: 2px 4px;">TPP Bulanan:</td><td style="text-align: right; font-weight: 600; color: #0f766e;">Rp 5.100.000</td></tr>
+            <tr style="border-top: 1px dashed #cbd5e1; font-weight: bold;"><td style="padding: 2px 4px; color: #047857;">Bersih Diterima:</td><td style="text-align: right; color: #047857;">Rp 10.041.680</td></tr>
+          </table>
+        </td>
+        <td style="padding: 10px 8px; font-size: 11px;">
+          <div style="font-family: monospace; font-weight: bold;">09.112.441.8-803.000</div>
+          <span style="display: inline-block; padding: 2px 5px; font-size: 10px; border-radius: 3px; margin-top: 2px; font-weight: bold; background: #fee2e2; color: #991b1b;">
+            Kurang Bayar
+          </span>
+          <div style="margin-top: 4px; font-size: 10px; color: #dc2626;">Selisih: Rp 3.100.000</div>
+        </td>
+        <td style="padding: 10px 8px; font-size: 11px; text-align: center;">
+          <div style="font-size: 15px; font-weight: 800; color: #15803d;">
+            75%
+          </div>
+          <div style="font-size: 10px; color: #64748b;">16 dari 22 hari kerja</div>
+          
+        </td>
+        <td style="padding: 10px 8px; font-size: 11px;">
+          <div style="font-weight: 800; color: #b91c1c; font-size: 13px;">Rp 820.000.000</div>
+          <div style="font-size: 10px; color: #475569; margin-top: 2px; line-height: 1.3;">Pemotongan sistematis uang persediaan (UP) kegiatan rapat, perjalanan dinas luar daerah fiktif pimpinan, dan selisih pengadaan ATK perkantoran</div>
+        </td>
+        <td style="padding: 10px 8px; font-size: 11px;">
+          <div style="font-weight: bold; color: #1e293b;">Total: Rp 1.310.000.000</div>
+          <div style="font-size: 10px; color: #d97706; margin-top: 2px;">220% di atas akumulasi penghasilan resmi bendahara</div>
+          <div style="font-size: 10px; color: #64748b; margin-top: 2px;">Rumah/Tanah: 2 unit, Mobil/Motor: 1 unit</div>
+        </td>
+        <td style="padding: 10px 8px; font-size: 10px;">
+          <span style="display: inline-block; padding: 2px 6px; font-weight: bold; border-radius: 4px; background: #fee2e2; color: #991b1b;">
+            Penyelidikan Khusus
+          </span>
+          <p style="margin: 4px 0 0 0; color: #334155; line-height: 1.3;">Audit investigasi menyeluruh dokumen SPJ dan rekening koran bendahara 3 tahun anggaran terakhir, penarikan spesimen tanda tangan.</p>
+        </td>
+      </tr>
+    
+      <tr style="border-bottom: 1px solid #cbd5e1; background-color: #f8fafc;">
+        <td style="padding: 10px 8px; text-align: center; font-weight: bold;">5</td>
+        <td style="padding: 10px 8px;">
+          <strong style="color: #0f172a; font-size: 14px;">Fahmi Ridwan, S.IP</strong><br/>
+          <span style="font-size: 11px; color: #475569;">NIP: 19920524 201802 1 001</span><br/>
+          <span style="display: inline-block; padding: 2px 6px; margin-top: 4px; font-size: 10px; font-weight: bold; border-radius: 4px; background: #e2e8f0; color: #1e293b;">
+            Staf Verifikasi Lapangan Perizinan & Tata Ruang (II/c)
+          </span><br/>
+          <span style="font-size: 11px; color: #64748b;">Bagian Perekonomian & Kerjasama Setda Kota Palopo</span>
+        </td>
+        <td style="padding: 10px 8px; font-size: 12px; color: #1e293b;">
+          <strong>Jl. Ahmad Yani No. 19, RT 01 / RW 01, Kel. Tomarundung, Kec. Wara Barat, Palopo</strong><br/>
+          <span style="color: #64748b;">Kel/Kec: Tomarundung, Wara Barat, Kota Palopo</span>
+        </td>
+        <td style="padding: 10px 8px; font-size: 11px;">
+          <div style="font-family: monospace; font-weight: bold; color: #0284c7;">040-028-119280-3</div>
+          <div style="color: #334155;">Bank: Bank Sulselbar Cabang Palopo</div>
+          <div style="font-size: 10px; color: #64748b;">a.n Fahmi Ridwan</div>
+        </td>
+        <td style="padding: 10px 8px; font-size: 11px;">
+          <table style="width: 100%; border-collapse: collapse; font-size: 11px; background: #f1f5f9; border-radius: 4px;">
+            <tr><td style="padding: 2px 4px;">Gaji Pokok:</td><td style="text-align: right; font-weight: 500;">Rp 2.680.000</td></tr>
+            <tr><td style="padding: 2px 4px;">Tunj. Jabatan:</td><td style="text-align: right; font-weight: 500;">Rp 360.000</td></tr>
+            <tr><td style="padding: 2px 4px;">TPP Bulanan:</td><td style="text-align: right; font-weight: 600; color: #0f766e;">Rp 3.200.000</td></tr>
+            <tr style="border-top: 1px dashed #cbd5e1; font-weight: bold;"><td style="padding: 2px 4px; color: #047857;">Bersih Diterima:</td><td style="text-align: right; color: #047857;">Rp 6.363.440</td></tr>
+          </table>
+        </td>
+        <td style="padding: 10px 8px; font-size: 11px;">
+          <div style="font-family: monospace; font-weight: bold;">84.102.399.1-803.000</div>
+          <span style="display: inline-block; padding: 2px 5px; font-size: 10px; border-radius: 3px; margin-top: 2px; font-weight: bold; background: #dcfce7; color: #166534;">
+            Patuh
+          </span>
+          <div style="margin-top: 4px; font-size: 10px; color: #dc2626;">Selisih: Rp 2.160.000</div>
+        </td>
+        <td style="padding: 10px 8px; font-size: 11px; text-align: center;">
+          <div style="font-size: 15px; font-weight: 800; color: #dc2626;">
+            18.2%
+          </div>
+          <div style="font-size: 10px; color: #64748b;">4 dari 22 hari kerja (Tingkat kehadiran 18%)</div>
+          <span style="display:inline-block; margin-top:3px; padding:1px 4px; background:#fecaca; color:#991b1b; font-size:9px; font-weight:bold; border-radius:3px;">Mangkir Gaji Utuh</span>
+        </td>
+        <td style="padding: 10px 8px; font-size: 11px;">
+          <div style="font-weight: 800; color: #b91c1c; font-size: 13px;">Rp 72.000.000</div>
+          <div style="font-size: 10px; color: #475569; margin-top: 2px; line-height: 1.3;">Penerimaan TPP & tunjangan kinerja tanpa kehadiran fisik, dibantu oknum pemegang password sistem absensi daring E-Kinerja Palopo</div>
+        </td>
+        <td style="padding: 10px 8px; font-size: 11px;">
+          <div style="font-weight: bold; color: #1e293b;">Total: Rp 321.000.000</div>
+          <div style="font-size: 10px; color: #d97706; margin-top: 2px;">Pelanggaran PP 94 Tahun 2021 tentang Disiplin Pegawai Negeri Sipil</div>
+          <div style="font-size: 10px; color: #64748b; margin-top: 2px;">Rumah/Tanah: 1 unit, Mobil/Motor: 1 unit</div>
+        </td>
+        <td style="padding: 10px 8px; font-size: 10px;">
+          <span style="display: inline-block; padding: 2px 6px; font-weight: bold; border-radius: 4px; background: #fee2e2; color: #991b1b;">
+            Terbukti & Rekomendasi Sanksi
+          </span>
+          <p style="margin: 4px 0 0 0; color: #334155; line-height: 1.3;">Pemotongan 100% TPP selama 12 bulan dan sanksi penundaan kenaikan pangkat serta pengembalian kelebihan bayar TPP ke kas daerah.</p>
+        </td>
+      </tr>
+    
+      <tr style="border-bottom: 1px solid #cbd5e1; background-color: #ffffff;">
+        <td style="padding: 10px 8px; text-align: center; font-weight: bold;">6</td>
+        <td style="padding: 10px 8px;">
+          <strong style="color: #0f172a; font-size: 14px;">Dra. Hj. Nur Aini Kasim, M.M.</strong><br/>
+          <span style="font-size: 11px; color: #475569;">NIP: 19710609 199603 2 003</span><br/>
+          <span style="display: inline-block; padding: 2px 6px; margin-top: 4px; font-size: 10px; font-weight: bold; border-radius: 4px; background: #e2e8f0; color: #1e293b;">
+            Sekretaris Badan Pengelola Keuangan & Aset Daerah (BPKAD) (IV/b)
+          </span><br/>
+          <span style="font-size: 11px; color: #64748b;">BPKAD Koordinasi Kantor Walikota Palopo</span>
+        </td>
+        <td style="padding: 10px 8px; font-size: 12px; color: #1e293b;">
+          <strong>Jl. Andi Djemma No. 78, Kel. Amassangan, Kec. Wara, Palopo</strong><br/>
+          <span style="color: #64748b;">Kel/Kec: Amassangan, Wara, Kota Palopo</span>
+        </td>
+        <td style="padding: 10px 8px; font-size: 11px;">
+          <div style="font-family: monospace; font-weight: bold; color: #0284c7;">008-011-552910-2</div>
+          <div style="color: #334155;">Bank: Bank BNI Kantor Cabang Palopo</div>
+          <div style="font-size: 10px; color: #64748b;">a.n Hj. Nur Aini Kasim</div>
+        </td>
+        <td style="padding: 10px 8px; font-size: 11px;">
+          <table style="width: 100%; border-collapse: collapse; font-size: 11px; background: #f1f5f9; border-radius: 4px;">
+            <tr><td style="padding: 2px 4px;">Gaji Pokok:</td><td style="text-align: right; font-weight: 500;">Rp 4.650.000</td></tr>
+            <tr><td style="padding: 2px 4px;">Tunj. Jabatan:</td><td style="text-align: right; font-weight: 500;">Rp 1.950.000</td></tr>
+            <tr><td style="padding: 2px 4px;">TPP Bulanan:</td><td style="text-align: right; font-weight: 600; color: #0f766e;">Rp 7.200.000</td></tr>
+            <tr style="border-top: 1px dashed #cbd5e1; font-weight: bold;"><td style="padding: 2px 4px; color: #047857;">Bersih Diterima:</td><td style="text-align: right; color: #047857;">Rp 13.852.680</td></tr>
+          </table>
+        </td>
+        <td style="padding: 10px 8px; font-size: 11px;">
+          <div style="font-family: monospace; font-weight: bold;">07.411.092.8-803.000</div>
+          <span style="display: inline-block; padding: 2px 5px; font-size: 10px; border-radius: 3px; margin-top: 2px; font-weight: bold; background: #fee2e2; color: #991b1b;">
+            Anomali Pelaporan Harta
+          </span>
+          <div style="margin-top: 4px; font-size: 10px; color: #dc2626;">Selisih: Rp 10.740.000</div>
+        </td>
+        <td style="padding: 10px 8px; font-size: 11px; text-align: center;">
+          <div style="font-size: 15px; font-weight: 800; color: #15803d;">
+            86%
+          </div>
+          <div style="font-size: 10px; color: #64748b;">19 dari 22 hari kerja</div>
+          
+        </td>
+        <td style="padding: 10px 8px; font-size: 11px;">
+          <div style="font-weight: 800; color: #b91c1c; font-size: 13px;">Rp 1.250.000.000</div>
+          <div style="font-size: 10px; color: #475569; margin-top: 2px; line-height: 1.3;">Penerimaan cashback pencairan SPM (Surat Perintah Membayar) proyek lanjutan drainase primer dan pavingisasi perkantoran</div>
+        </td>
+        <td style="padding: 10px 8px; font-size: 11px;">
+          <div style="font-weight: bold; color: #1e293b;">Total: Rp 2.970.000.000</div>
+          <div style="font-size: 10px; color: #d97706; margin-top: 2px;">290% melampaui riwayat akumulasi pendapatan dinas</div>
+          <div style="font-size: 10px; color: #64748b; margin-top: 2px;">Rumah/Tanah: 2 unit, Mobil/Motor: 1 unit</div>
+        </td>
+        <td style="padding: 10px 8px; font-size: 10px;">
+          <span style="display: inline-block; padding: 2px 6px; font-weight: bold; border-radius: 4px; background: #fee2e2; color: #991b1b;">
+            Penyelidikan Khusus
+          </span>
+          <p style="margin: 4px 0 0 0; color: #334155; line-height: 1.3;">Pemeriksaan lanjutan bersama tim audit BPKP Perwakilan Sulsel untuk rekonsiliasi SP2D proyek fisik dan rekening penampung.</p>
+        </td>
+      </tr>
+    
+        </tbody>
+      </table>
+    </div>
+
+    <!-- BAGIAN 2: AUDIT PROPERTI & KK BTN MERDEKA BLOK L NO. 12 -->
+    <div class="section-title">
+      <span>2. AUDIT FORENSIK KHUSUS: RUMAH BTN MERDEKA BLOK L NOMOR 12 & KARTU KELUARGA (KK)</span>
+      <span style="font-size: 12px; font-weight: normal; color: #dc2626;">Status: Indikasi Nominee Pencucian Uang (TPPU)</span>
+    </div>
+
+    <div class="property-card">
+      <div class="property-grid">
+        <div>
+          <strong>Alamat Properti:</strong><br/>
+          Perumahan BTN Merdeka Blok L Nomor 12, Kelurahan Salobulo, Kecamatan Wara Utara, Kota Palopo, Sulawesi Selatan
+        </div>
+        <div>
+          <strong>Fisik & Spesifikasi Bangunan:</strong><br/>
+          Luas Tanah: 240 m² | Luas Bangunan: 180 m²<br/>
+          Bangunan 2 Lantai Mewah, Struktur Beton Bertulang, Garasi Kapasitas 2 Mobil, Kanopi Kaca Tempered, CCTV 8 Titik, Pagar Besi Tempa Hitam Emas
+        </div>
+        <div>
+          <strong>Estimasi Nilai & Sertifikat:</strong><br/>
+          Nilai Pasar: <strong style="color: #b91c1c;">Rp 1.450.000.000</strong><br/>
+          NJOP SPPT: Rp 420.000.000 (Under-invoicing)<br/>
+          Sertifikat: SHM No. 01842/Salobulo
+        </div>
+      </div>
+
+      <div style="margin-top: 14px; padding: 10px; background: #fee2e2; border-left: 4px solid #dc2626; border-radius: 4px; font-size: 12px; color: #991b1b;">
+        <strong>Korelasi dengan Oknum ASN Kantor Walikota/PUPR Palopo:</strong><br/>
+        Ditemukan indikasi kuat tindak pidana pencucian uang (TPPU) dengan modus nominee nama mertua oleh oknum ASN PPK Kantor Walikota/PUPR (Ir. Hendra Gunawan) untuk menyembunyikan kekayaan hasil suap proyek lanjutan infrastruktur jalan lingkar Palopo.
+      </div>
+
+      <!-- Kartu Keluarga Penghuni -->
+      <h3 style="font-size: 13px; font-weight: 700; margin: 18px 0 8px 0; color: #1e293b;">
+        A. Data Kartu Keluarga (KK) Terdaftar: No. KK 7373021908120045
+      </h3>
+      <div style="font-size: 11px; color: #475569; margin-bottom: 6px;">
+        Kepala Keluarga: <strong>H. RUSTAM EFENDI</strong> | Tanggal Terbit: 14 Agustus 2020 | Domisili: Tercatat tinggal di alamat objek: BTN Merdeka Blok L No. 12, RT 03 / RW 02, Salobulo, Wara Utara, Palopo
+      </div>
+      <div class="table-container" style="margin-bottom: 14px;">
+        <table>
+          <thead>
+            <tr style="background: #334155;">
+              <th style="width: 30px; text-align: center;">No</th>
+              <th style="width: 140px;">NIK</th>
+              <th style="width: 180px;">Nama Lengkap</th>
+              <th style="width: 130px;">Hubungan Keluarga</th>
+              <th style="width: 150px;">Pekerjaan Resmi</th>
+              <th style="width: 130px;">NPWP Pribadi</th>
+              <th>Status Keterkaitan Investigasi Aliran Dana</th>
+            </tr>
+          </thead>
+          <tbody>
+            
+    <tr style="border-bottom: 1px solid #e2e8f0; font-size: 12px; background-color: #ffffff;">
+      <td style="padding: 8px; text-align: center; font-weight: bold;">1</td>
+      <td style="padding: 8px; font-family: monospace; font-weight: bold; color: #0284c7;">7373021504540001</td>
+      <td style="padding: 8px;"><strong>H. RUSTAM EFENDI</strong> (Laki-laki)</td>
+      <td style="padding: 8px; color: #475569;">Kepala Keluarga (Mertua Oknum ASN)</td>
+      <td style="padding: 8px; color: #475569;">Pensiunan Guru (Tanpa Riwayat Usaha Bernilai Miliaran)</td>
+      <td style="padding: 8px; font-family: monospace;">07.128.901.4-803.000</td>
+      <td style="padding: 8px; color: #b91c1c; font-weight: 500;">Diduga sebagai Nominee atas kepemilikan aset properti mewah BTN Merdeka Blok L No. 12</td>
+    </tr>
+  
+    <tr style="border-bottom: 1px solid #e2e8f0; font-size: 12px; background-color: #f8fafc;">
+      <td style="padding: 8px; text-align: center; font-weight: bold;">2</td>
+      <td style="padding: 8px; font-family: monospace; font-weight: bold; color: #0284c7;">7373025211580002</td>
+      <td style="padding: 8px;"><strong>HJ. SITI MARYAM</strong> (Perempuan)</td>
+      <td style="padding: 8px; color: #475569;">Istri Kepala Keluarga</td>
+      <td style="padding: 8px; color: #475569;">Mengurus Rumah Tangga</td>
+      <td style="padding: 8px; font-family: monospace;">Tidak Memiliki (Ikut Suami)</td>
+      <td style="padding: 8px; color: #b91c1c; font-weight: 500;">Saksi domisili; tidak mengetahui transaksi pembelian properti</td>
+    </tr>
+  
+    <tr style="border-bottom: 1px solid #e2e8f0; font-size: 12px; background-color: #ffffff;">
+      <td style="padding: 8px; text-align: center; font-weight: bold;">3</td>
+      <td style="padding: 8px; font-family: monospace; font-weight: bold; color: #0284c7;">7373026407850003</td>
+      <td style="padding: 8px;"><strong>NURHAYATI RUSTAM, S.Pd</strong> (Perempuan)</td>
+      <td style="padding: 8px; color: #475569;">Anak (Istri dari Oknum ASN Ir. Hendra Gunawan)</td>
+      <td style="padding: 8px; color: #475569;">Guru Honorer / Wiraswasta Butik</td>
+      <td style="padding: 8px; font-family: monospace;">81.442.109.8-803.000</td>
+      <td style="padding: 8px; color: #b91c1c; font-weight: 500;">Rekening Bank Sulselbar miliknya digunakan menerima transfer rutin bertahap Rp 450 Juta dari kontraktor pelaksana rekanan jalan</td>
+    </tr>
+  
+    <tr style="border-bottom: 1px solid #e2e8f0; font-size: 12px; background-color: #f8fafc;">
+      <td style="padding: 8px; text-align: center; font-weight: bold;">4</td>
+      <td style="padding: 8px; font-family: monospace; font-weight: bold; color: #0284c7;">7373021201100004</td>
+      <td style="padding: 8px;"><strong>MUHAMMAD FAIZ HENDRA</strong> (Laki-laki)</td>
+      <td style="padding: 8px; color: #475569;">Cucu (Anak ASN Terperiksa)</td>
+      <td style="padding: 8px; color: #475569;">Pelajar</td>
+      <td style="padding: 8px; font-family: monospace;">Belum Wajib Pajak</td>
+      <td style="padding: 8px; color: #b91c1c; font-weight: 500;">Anggota keluarga tanggungan</td>
+    </tr>
+  
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Audit Internal Perpajakan BTN Merdeka -->
+      <h3 style="font-size: 13px; font-weight: 700; margin: 16px 0 8px 0; color: #1e293b;">
+        B. Audit Internal Perpajakan Rumah BTN Merdeka Blok L No. 12
+      </h3>
+      <div style="background: #ffffff; border: 1px solid #e2e8f0; border-radius: 6px; padding: 12px; font-size: 12px; margin-bottom: 14px;">
+        <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px;">
+          <div>
+            <strong>NOP PBB-P2:</strong> <code style="background: #f1f5f9; padding: 2px 4px;">73.73.020.004.012-0045.0</code><br/>
+            <strong>Status PBB 2024:</strong> <span style="color: #dc2626; font-weight: bold;">Menunggak 2 Tahun</span> (Rp 2.850.000)
+          </div>
+          <div>
+            <strong>PPh Final Pengalihan Hak:</strong><br/>
+            Seharusnya: Rp 36.250.000<br/>
+            Disetor (AJB): Rp 10.500.000
+          </div>
+          <div>
+            <strong>Temuan Selisih / Kerugian Pajak:</strong><br/>
+            <span style="color: #dc2626; font-weight: bold;">Kurang Bayar PPh & BPHTB: Rp 25.750.000</span><br/>
+            <span style="font-size: 11px; color: #64748b;">(Modus manipulasi nilai transaksi)</span>
+          </div>
+        </div>
+        <div style="margin-top: 10px; font-size: 11px; color: #475569;">
+          <strong>Catatan Tim Audit Pajak:</strong>
+          <ul style="margin: 4px 0 0 16px; padding: 0;">
+            <li>PBB-P2 tahun pajak 2022 dan 2023 belum dilunasi, terdapat denda keterlambatan 2% per bulan.</li><li>Data luasan fisik bangunan pada SPPT PBB masih tercatat tipe 70 m² (belum di-update pasca renovasi total menjadi 180 m² 2 lantai), mengindikasikan penghindaran pajak bumi dan bangunan.</li><li>Sumber dana pembayaran cicilan dan renovasi bangunan senilai Rp 850 Juta diidentifikasi berasal dari transfer perbankan bertahap rekanan tender PU Kota Palopo.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Bukti Aliran Transfer Properti -->
+      <h3 style="font-size: 13px; font-weight: 700; margin: 16px 0 8px 0; color: #1e293b;">
+        C. Bukti Mutasi Aliran Dana Rekanan Proyek Masuk ke Keluarga BTN Merdeka
+      </h3>
+      <div class="table-container" style="margin-bottom: 0;">
+        <table>
+          <thead>
+            <tr style="background: #475569;">
+              <th style="width: 120px;">Tanggal Transfer</th>
+              <th style="width: 200px;">Rekening Pengirim (Rekanan Proyek)</th>
+              <th style="width: 200px;">Rekening Penerima (Keluarga)</th>
+              <th style="width: 140px;">Nominal (IDR)</th>
+              <th>Keterangan / Berita Acara Transfer</th>
+            </tr>
+          </thead>
+          <tbody>
+            
+    <tr style="border-bottom: 1px solid #e2e8f0; font-size: 12px; background-color: #ffffff;">
+      <td style="padding: 8px; font-weight: bold; color: #475569;">12 Februari 2023</td>
+      <td style="padding: 8px; color: #0369a1;">Rek. PT Cahaya Luwu Mandiri (Vendor Aspal)</td>
+      <td style="padding: 8px; color: #047857;">Rekening Bank Sulselbar a.n Nurhayati Rustam</td>
+      <td style="padding: 8px; font-weight: bold; color: #b91c1c;">Rp 250.000.000</td>
+      <td style="padding: 8px; color: #475569;">Keterangan transfer: "Tahap 1 Pembayaran Material Konstruksi"</td>
+    </tr>
+  
+    <tr style="border-bottom: 1px solid #e2e8f0; font-size: 12px; background-color: #f8fafc;">
+      <td style="padding: 8px; font-weight: bold; color: #475569;">28 Mei 2023</td>
+      <td style="padding: 8px; color: #0369a1;">Rek. CV Sinar Sawerigading Konstruksi</td>
+      <td style="padding: 8px; color: #047857;">Rekening Bank Mandiri a.n Hendra Gunawan</td>
+      <td style="padding: 8px; font-weight: bold; color: #b91c1c;">Rp 350.000.000</td>
+      <td style="padding: 8px; color: #475569;">Keterangan transfer: "Pelunasan Interior & Renovasi Tahap 2"</td>
+    </tr>
+  
+    <tr style="border-bottom: 1px solid #e2e8f0; font-size: 12px; background-color: #ffffff;">
+      <td style="padding: 8px; font-weight: bold; color: #475569;">19 Oktober 2023</td>
+      <td style="padding: 8px; color: #0369a1;">Setoran Tunai Teller Palopo (Tanpa Nama)</td>
+      <td style="padding: 8px; color: #047857;">Rekening BTN a.n H. Rustam Efendi</td>
+      <td style="padding: 8px; font-weight: bold; color: #b91c1c;">Rp 250.000.000</td>
+      <td style="padding: 8px; color: #475569;">Setoran tunai pelunasan sisa tagihan renovasi rumah BTN Merdeka Blok L No. 12</td>
+    </tr>
+  
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- BAGIAN 3: TRANSPARANSI ALOKASI PAJAK KE RAKYAT KURANG MAMPU -->
+    <div class="section-title">
+      <span>3. TRANSPARANSI DATA PERPAJAKAN YANG DIALIRKAN KE RAKYAT KURANG MAMPU (KOTA PALOPO)</span>
+      <span style="font-size: 12px; font-weight: normal; color: #15803d;">Total Realisasi: Rp 14.470.000.000</span>
+    </div>
+
+    <div class="table-container">
+      <table>
+        <thead>
+          <tr style="background: #14532d;">
+            <th style="width: 30px; text-align: center;">No</th>
+            <th style="width: 220px;">Program Bantuan & Sumber Pajak</th>
+            <th style="width: 180px;">Kecamatan Sasaran Palopo</th>
+            <th style="width: 130px;">Jumlah Penerima</th>
+            <th style="width: 130px; text-align: right;">Alokasi APBD</th>
+            <th style="width: 130px; text-align: right;">Realisasi Tersalurkan</th>
+            <th style="width: 100px; text-align: center;">Status</th>
+            <th>Dampak Nyata Penyaluran</th>
+          </tr>
+        </thead>
+        <tbody>
+          
+    <tr style="border-bottom: 1px solid #e2e8f0; font-size: 12px; background-color: #ffffff;">
+      <td style="padding: 8px; text-align: center; font-weight: bold;">1</td>
+      <td style="padding: 8px;">
+        <strong style="color: #0f172a;">Bantuan Pangan Non-Tunai (BPNT) & Sembako Dhuafa Palopo</strong>
+        <div style="font-size: 11px; color: #64748b; margin-top: 2px;">Penyaluran beras premium 10kg, minyak goreng, dan telur untuk keluarga berpenghasilan di bawah upah minimum regional di 9 kecamatan Kota Palopo.</div>
+        <div style="font-size: 11px; color: #0284c7; margin-top: 2px;">Sumber: Pajak Restoran, PBJT Hotel, dan Bagi Hasil Pajak Penghasilan (PPH)</div>
+      </td>
+      <td style="padding: 8px; color: #334155;">Wara, Wara Selatan, Wara Utara, Wara Barat, Telluwanua, Sendana, Mungkajang, Bara, Siguntu</td>
+      <td style="padding: 8px; font-weight: bold; color: #047857;">4.850 Kepala Keluarga Miskin</td>
+      <td style="padding: 8px; font-family: monospace; font-weight: bold; text-align: right;">Rp 4.350.000.000</td>
+      <td style="padding: 8px; font-family: monospace; font-weight: bold; color: #166534; text-align: right;">Rp 4.120.000.000</td>
+      <td style="padding: 8px; text-align: center;">
+        <span style="display: inline-block; padding: 3px 8px; font-size: 10px; font-weight: bold; border-radius: 4px; background: #dcfce7; color: #15803d;">
+          Tersalurkan 100%
+        </span>
+      </td>
+      <td style="padding: 8px; font-size: 11px; color: #1e293b;">Menekan angka stunting balita dan menjamin ketahanan pangan harian masyarakat kurang mampu.</td>
+    </tr>
+  
+    <tr style="border-bottom: 1px solid #e2e8f0; font-size: 12px; background-color: #f8fafc;">
+      <td style="padding: 8px; text-align: center; font-weight: bold;">2</td>
+      <td style="padding: 8px;">
+        <strong style="color: #0f172a;">Program Bedah Rumah Dhuafa & RTLH (Rumah Tidak Layak Huni)</strong>
+        <div style="font-size: 11px; color: #64748b; margin-top: 2px;">Bantuan renovasi dinding, atap seng tahan karat, dan lantai semen sehat bagi warga gubuk reyot di pesisir dan pinggiran bukit Palopo.</div>
+        <div style="font-size: 11px; color: #0284c7; margin-top: 2px;">Sumber: Pajak Bumi dan Bangunan Perdesaan dan Perkotaan (PBB-P2) Palopo</div>
+      </td>
+      <td style="padding: 8px; color: #334155;">Kecamatan Telluwanua, Sendana, dan Pesisir Tanjung Ringgit Palopo</td>
+      <td style="padding: 8px; font-weight: bold; color: #047857;">125 Unit Rumah Rakyat Miskin</td>
+      <td style="padding: 8px; font-family: monospace; font-weight: bold; text-align: right;">Rp 2.500.000.000</td>
+      <td style="padding: 8px; font-family: monospace; font-weight: bold; color: #166534; text-align: right;">Rp 2.150.000.000</td>
+      <td style="padding: 8px; text-align: center;">
+        <span style="display: inline-block; padding: 3px 8px; font-size: 10px; font-weight: bold; border-radius: 4px; background: #dcfce7; color: #15803d;">
+          Tahap Penyaluran
+        </span>
+      </td>
+      <td style="padding: 8px; font-size: 11px; color: #1e293b;">Memberikan hunian yang layak, higienis, dan terlindungi dari banjir musiman sungai Latuppa.</td>
+    </tr>
+  
+    <tr style="border-bottom: 1px solid #e2e8f0; font-size: 12px; background-color: #ffffff;">
+      <td style="padding: 8px; text-align: center; font-weight: bold;">3</td>
+      <td style="padding: 8px;">
+        <strong style="color: #0f172a;">Jaminan Kesehatan Semesta Gratis (PBI APBD BPJS Palopo)</strong>
+        <div style="font-size: 11px; color: #64748b; margin-top: 2px;">Subsidi iuran BPJS Kesehatan Kelas 3 gratis untuk warga miskin, lansia terlantar, dan penyandang disabilitas Palopo.</div>
+        <div style="font-size: 11px; color: #0284c7; margin-top: 2px;">Sumber: Pajak Penerangan Jalan (PPJ) dan Pajak Reklame Daerah Palopo</div>
+      </td>
+      <td style="padding: 8px; color: #334155;">Seluruh 48 Kelurahan di Kota Palopo</td>
+      <td style="padding: 8px; font-weight: bold; color: #047857;">18.400 Jiwa Penerima Bantuan Iuran</td>
+      <td style="padding: 8px; font-family: monospace; font-weight: bold; text-align: right;">Rp 5.800.000.000</td>
+      <td style="padding: 8px; font-family: monospace; font-weight: bold; color: #166534; text-align: right;">Rp 5.800.000.000</td>
+      <td style="padding: 8px; text-align: center;">
+        <span style="display: inline-block; padding: 3px 8px; font-size: 10px; font-weight: bold; border-radius: 4px; background: #dcfce7; color: #15803d;">
+          Tersalurkan 100%
+        </span>
+      </td>
+      <td style="padding: 8px; font-size: 11px; color: #1e293b;">Akses berobat gratis tanpa biaya di RSUD Sawerigading Palopo dan Puskesmas terdekat.</td>
+    </tr>
+  
+    <tr style="border-bottom: 1px solid #e2e8f0; font-size: 12px; background-color: #f8fafc;">
+      <td style="padding: 8px; text-align: center; font-weight: bold;">4</td>
+      <td style="padding: 8px;">
+        <strong style="color: #0f172a;">Beasiswa Pendidikan Siswa Miskin & Mahasiswa Dhuafa Palopo</strong>
+        <div style="font-size: 11px; color: #64748b; margin-top: 2px;">Bantuan tunai SPP dan seragam sekolah bagi anak putus sekolah keluarga pra-sejahtera dan beasiswa perguruan tinggi di Kota Palopo.</div>
+        <div style="font-size: 11px; color: #0284c7; margin-top: 2px;">Sumber: Pajak Air Tanah, Pajak Mineral Bukan Logam, dan Opsen Pajak Kendaraan Bermotor (PKB)</div>
+      </td>
+      <td style="padding: 8px; color: #334155;">Kecamatan Wara, Wara Timur, Bara, dan Mungkajang</td>
+      <td style="padding: 8px; font-weight: bold; color: #047857;">920 Siswa SD/SMP & 150 Mahasiswa</td>
+      <td style="padding: 8px; font-family: monospace; font-weight: bold; text-align: right;">Rp 1.650.000.000</td>
+      <td style="padding: 8px; font-family: monospace; font-weight: bold; color: #166534; text-align: right;">Rp 1.420.000.000</td>
+      <td style="padding: 8px; text-align: center;">
+        <span style="display: inline-block; padding: 3px 8px; font-size: 10px; font-weight: bold; border-radius: 4px; background: #dcfce7; color: #15803d;">
+          Tahap Penyaluran
+        </span>
+      </td>
+      <td style="padding: 8px; font-size: 11px; color: #1e293b;">Mencegah putus sekolah generasi muda Luwu Raya dan meningkatkan Indeks Pembangunan Manusia (IPM).</td>
+    </tr>
+  
+    <tr style="border-bottom: 1px solid #e2e8f0; font-size: 12px; background-color: #ffffff;">
+      <td style="padding: 8px; text-align: center; font-weight: bold;">5</td>
+      <td style="padding: 8px;">
+        <strong style="color: #0f172a;">Bantuan Modal Usaha Bergulir & Alat Tangkap Nelayan Tradisional</strong>
+        <div style="font-size: 11px; color: #64748b; margin-top: 2px;">Distribusi jaring nelayan, coolbox ikan, dan gerobak etalase usaha kecil untuk pedagang kaki lima di Pasar Sentral Palopo dan Pantai Labombo.</div>
+        <div style="font-size: 11px; color: #0284c7; margin-top: 2px;">Sumber: Retribusi Daerah & Pajak Sarang Burung Walet Palopo</div>
+      </td>
+      <td style="padding: 8px; color: #334155;">Wara Timur, Tanjung Ringgit, Ponjalae, Malatunrung</td>
+      <td style="padding: 8px; font-weight: bold; color: #047857;">340 Nelayan & Pedagang Kecil</td>
+      <td style="padding: 8px; font-family: monospace; font-weight: bold; text-align: right;">Rp 1.200.000.000</td>
+      <td style="padding: 8px; font-family: monospace; font-weight: bold; color: #166534; text-align: right;">Rp 980.000.000</td>
+      <td style="padding: 8px; text-align: center;">
+        <span style="display: inline-block; padding: 3px 8px; font-size: 10px; font-weight: bold; border-radius: 4px; background: #dcfce7; color: #15803d;">
+          Tahap Penyaluran
+        </span>
+      </td>
+      <td style="padding: 8px; font-size: 11px; color: #1e293b;">Meningkatkan pendapatan mandiri keluarga miskin nelayan dari Rp 45.000/hari menjadi Rp 120.000/hari.</td>
+    </tr>
+  
+        </tbody>
+      </table>
+    </div>
+
+    <!-- PENUTUP & TANDA TANGAN AUDITOR -->
+    <div class="footer">
+      <div>
+        <p style="margin: 0; font-weight: bold; color: #1e293b;">KOTA PALOPO - SISTEM MONITORING INTEGRITAS APBD</p>
+        <p style="margin: 2px 0;">Dokumen ini diproses otomatis untuk transparansi publik dan pelaporan instansi pemeriksa.</p>
+        <p style="margin: 2px 0; color: #94a3b8;">Hash Verifikasi: SHA256-8F29A44B0C731E9D-PALOPO-TRANSPARENCY-GOV</p>
+      </div>
+      <div class="signature-box">
+        <p style="margin: 0; font-size: 12px;">Palopo, 4 November 2026</p>
+        <p style="margin: 2px 0 45px 0; font-size: 11px; font-weight: bold;">Ketua Tim Pemeriksa Khusus Inspektorat</p>
+        <p style="margin: 0; font-weight: bold; text-decoration: underline;">Dr. H. A. Muh. Ilham, S.H., M.H.</p>
+        <p style="margin: 0; font-size: 10px; color: #64748b;">NIP. 19691231 199403 1 008</p>
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>
